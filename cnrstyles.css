@@ -1,0 +1,224 @@
+/* Updated color palette based on:
+  #000000 (Black)
+  #CDBAA5 (Beige/Tan)
+  #BED3d3 (Seafoam Green/Blue)
+  #CACAC6 (Light Grey)
+*/
+
+
+<style>
+  .gradient-text {
+    /* You can change the gradient colors here */
+    background-image: linear-gradient(to right, #6366F1, #A855F7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+* {
+    box-sizing: border-box;
+}
+
+/* General Body & Font Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #CACAC6; /* Light Grey as main background */
+    color: #000000; /* Black for default text */
+    margin: 0;
+}
+
+/* Gradient and Pattern Backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #CDBAA5, #BED3d3);
+}
+
+.hero-pattern {
+    background-color: #CDBAA5; /* Beige for the hero section */
+    background-image: radial-gradient(#00000022 1px, transparent 1px);
+    background-size: 15px 15px;
+    position: relative;
+    color: #000000; /* Black text on the beige background */
+}
+
+/* Ensure text in hero is readable */
+.hero-pattern h1, .hero-pattern p {
+    color: #000000;
+}
+
+.temple-silhouette {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://placehold.co/1440x300/FFFFFF/FFFFFF?text=+'); /* Replace with your temple silhouette SVG/PNG */
+    background-size: contain;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.temple-pattern {
+    background-color: #CACAC6; /* Match main background */
+}
+
+/* Text and Titles */
+.gradient-text {
+    background: -webkit-linear-gradient(#BED3d3, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-title {
+    color: #000000; /* Changed to Black for better contrast on white backgrounds */
+}
+
+/* Buttons */
+.btn-shop {
+    background: linear-gradient(135deg, #CDBAA5, #CDBAA5);
+    color: #000000;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-shop:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+.btn-shop-white {
+    background-color: #FFFFFF; /* Using white for necessary contrast */
+    color: #000000; /* Black text for readability */
+    border: 1px solid #BED3d3; /* Added border to incorporate the accent color */
+}
+.btn-shop-white:hover {
+    background-color: #BED3d3; /* Seafoam on hover */
+    color: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/* Navigation */
+nav.gradient-bg a {
+    color: #000000; /* Black text on the new light gradient */
+}
+nav.gradient-bg .gradient-text { /* Ensure nav title is readable */
+    background: -webkit-linear-gradient(#000000, #000000); /* Solid black for readability */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+    position: relative;
+    padding-bottom: 4px;
+}
+.gradient-border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: width 0.3s ease-in-out;
+}
+.gradient-border:hover::after {
+    width: 100%;
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #000000; /* Black arrows */
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: rgba(205, 186, 165, 0.6); /* Semi-transparent beige */
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: #FFFFFF;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Specific Section Styling */
+#contact, #coming-soon, #reviews {
+    background-color: #FFFFFF; /* White background for clean content sections */
+}
+
+#reviews {
+    background-color: #CACAC6; /* Light grey for reviews section */
+}
+
+.testimonial-card {
+    background-color: #FFFFFF;
+    border: 1px solid #CDBAA5;
+}
+.testimonial-card .bg-gradient-to-br { /* Initials circle */
+    background: linear-gradient(135deg, #CDBAA5, #BED3d3);
+}
+
+#coming-soon .bg-gray-100 {
+    background-color: #FFFFFF;
+    border: 1px solid #CACAC6;
+}
+
+#sizing-guide {
+    background-color: #BED3d3; /* Seafoam for sizing guide section */
+    color: #000000; /* Black text for readability on the light background*/
+}
+
+#sizing-guide h2 {
+    color: #000000;
+}
+
+#sizing-guide .bg-white {
+    background-color: #FFFFFF !important;
+    color: #000000 !important;
+}
+
+/* Footer */
+footer.gradient-bg {
+    color: #000000; /* Black text on the new light gradient */
+}
+footer.gradient-bg a {
+    color: #000000;
+}
+footer.gradient-bg a:hover {
+    color: #FFFFFF;
+}
+footer.gradient-bg .border-t {
+    border-color: rgba(0, 0, 0, 0.2);
+}

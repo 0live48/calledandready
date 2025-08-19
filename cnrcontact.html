@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Called and Ready</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cnrstyles.css">
+
+    <style>
+        .form-input {
+            background-color: #FFFFFF;
+            border: 1px solid #CACAC6; /* Light Grey Border */
+            color: #000000;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #BED3d3; /* Seafoam on focus */
+            box-shadow: 0 0 0 3px rgba(190, 211, 211, 0.4); /* Seafoam ring */
+        }
+        .form-input::placeholder {
+            color: #6b7280; /* A standard placeholder color */
+        }
+    </style>
+</head>
+<body class="bg-CACAC6"> <nav class="gradient-bg py-4 px-6 shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-x-4">
+                <a href="index.html"> <img src="cnrpics/CnRLogo600x180px.png" alt="Company Logo" class="h-12 w-auto">
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="gradient-border">Home</a> </div>
+        </div>
+    </nav>
+
+    <main class="py-16 sm:py-24 px-6">
+        <div class="mx-auto max-w-2xl bg-white p-8 sm:p-12 rounded-lg shadow-2xl">
+            <div class="text-center">
+                <h1 class="text-3xl sm:text-4xl font-bold section-title">Get in Touch</h1>
+                <p class="mt-4 text-lg text-gray-600">Have a question or feedback? We'd love to hear from you.</p>
+            </div>
+
+            <form action="https://script.google.com/macros/s/AKfycbz_2z3t1rcAgjPulhof1g_DnzGia2EWywIvENNlFARBW7BR5iowApdueWfbiXqIwP0/exec" method="POST" class="mt-10">
+
+  <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+      <div>
+          <label for="name" class="sr-only">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" class="form-input block w-full rounded-md p-3">
+      </div>
+      <div>
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" class="form-input block w-full rounded-md p-3">
+      </div>
+      <div class="sm:col-span-2">
+          <label for="phone-number" class="sr-only">Phone number</label>
+          <input type="tel" name="phone" id="phone-number" placeholder="Phone number" class="form-input block w-full rounded-md p-3">
+      </div>
+      <div class="sm:col-span-2">
+          <label for="comment" class="sr-only">Comment</label>
+          <textarea name="comment" id="comment" rows="6" placeholder="Comment" class="form-input block w-full rounded-md p-3"></textarea>
+      </div>
+  </div>
+  <div class="mt-8">
+      <button type="submit" class="btn-shop block w-full rounded-md px-3.5 py-3.5 text-center text-md font-semibold shadow-sm">
+          SEND MESSAGE
+      </button>
+  </div>
+</form>
+        </div>
+    </main>
+
+    <footer class="gradient-bg py-10">
+        <div class="container mx-auto px-6">
+            <p class="text-center text-sm">&copy; 2025 Called and Ready. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
